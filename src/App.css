@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: Blood;
+    src: url('./assets/cherish.otf');
+}
+.app{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    background-position: center bottom;
+    font-family: Blood;
+    
+}
+h1{
+    font-size: 55px;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+span{
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
+h4{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    color:rgb(226,75,69);
+    font-weight: 600;
+}
+.btn{
+    border: none;
+    background-color: rgb(11, 196, 14);
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -20px;
+}
+.banner{
+    border-radius: 20px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(226, 154, 69, 0.8),rgb(226,75,69, 0.8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .banner{
+        width: 990px;
+        height: 60vh;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width: 900px )and ( max-width: 1199px) {
+    .banner{
+        width: 700px;
+        height: 70vh;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (min-width: 600px )and ( max-width: 899px) {
+    .banner{
+        width: 580px;
+        height: 60vh;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and ( max-width: 599px) {
+    .banner{
+        width: 350px;
+        height: 60vh;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
